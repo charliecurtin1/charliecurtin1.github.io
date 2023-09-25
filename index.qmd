@@ -1,5 +1,19 @@
 ---
-title: "charliecurtin1.github.io"
+title: "Charlie Curtin"
+image: images/image_filler.jpg
+toc: false
+about:
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: Github
+      href: https://github.com/charliecurtin1
+      icon: github
+    - text: Email
+      href: mailto::charlescurtin@ucsb.edu
+      icon: envelope
+      
 ---
 
 Hi there! My name is Charlie Curtin, and I'm student at the Bren School of Environmental Science and Management pursuing a master's degree in environmental data science. 
