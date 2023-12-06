@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/STAC.html",
       "/posts/2023-11-06-first-post/index.html"
     ]
   }
