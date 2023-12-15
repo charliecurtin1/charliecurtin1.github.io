@@ -61,10 +61,10 @@ options(scipen = 999)
 
 ```{r, message = FALSE}
 # read in tree canopy percentage by census tract
-tree_canopy <- read_csv(here("posts", "2023-12-14-eds222-final", "data", "2016 Tree Canopy Cover Calculations_a.csv"))
+tree_canopy <- read_csv(here("posts", "ozone-canopy-cover", "data", "2016 Tree Canopy Cover Calculations_a.csv"))
 
 # read in CalEnviroScreen 4.0
-enviroscreen <- st_read(here("posts", "2023-12-14-eds222-final", "data", "calenviroscreen40shpf2021shp", "CES4 Final Shapefile.shp"), quiet = TRUE) %>% 
+enviroscreen <- st_read(here("posts", "ozone-canopy-cover", "data", "calenviroscreen40shpf2021shp", "CES4 Final Shapefile.shp"), quiet = TRUE) %>% 
   filter(County == "Los Angeles")
 
 # select variables of interest
@@ -213,15 +213,15 @@ The US EPA AQS data is downloaded as three separate .csv files for 2017, 2018, a
 ```{r, message = FALSE, warning = FALSE}
 ## read in our time-series ozone data
 # LA ozone 2017
-la_ozone_2017 <- read_csv(here("posts", "2023-12-14-eds222-final", "data", "la_ozone_2017.csv")) %>% 
+la_ozone_2017 <- read_csv(here("posts", "ozone-canopy-cover", "data", "la_ozone_2017.csv")) %>% 
     rename(ozone = "Daily Max 8-hour Ozone Concentration")
 
 # LA ozone 2018
-la_ozone_2018 <- read_csv(here("posts", "2023-12-14-eds222-final", "data", "la_ozone_2018.csv")) %>% 
+la_ozone_2018 <- read_csv(here("posts", "ozone-canopy-cover", "data", "la_ozone_2018.csv")) %>% 
     rename(ozone = "Daily Max 8-hour Ozone Concentration")
 
 # LA ozone 2019
-la_ozone_2019 <- read_csv(here("posts", "2023-12-14-eds222-final", "data", "la_ozone_2019.csv")) %>% 
+la_ozone_2019 <- read_csv(here("posts", "ozone-canopy-cover", "data", "la_ozone_2019.csv")) %>% 
     rename(ozone = "Daily Max 8-hour Ozone Concentration")
 
 # rbind our CSVs together
