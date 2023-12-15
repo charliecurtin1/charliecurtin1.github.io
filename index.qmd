@@ -1,6 +1,6 @@
 ---
 title: "Charlie Curtin"
-image: images/image_filler.jpg
+image: images/headshot.png
 toc: false
 about:
   template: trestles
@@ -13,7 +13,6 @@ about:
     - text: Email
       href: mailto::charlescurtin@ucsb.edu
       icon: envelope
-      
 ---
 
-Hi there! My name is Charlie Curtin, and I'm student at the Bren School of Environmental Science and Management pursuing a master's degree in environmental data science. 
+Hi there! My name is Charlie Curtin, and I'm student at the Bren School of Environmental Science and Management pursuing a master's degree in environmental data science.
